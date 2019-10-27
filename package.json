@@ -1,0 +1,33 @@
+{
+  "name": "asana-localization",
+  "version": "1.0.0",
+  "description": "Asana Russian Localization",
+  "scripts": {
+    "build": "babel-node build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.1",
+    "@babel/core": "^7.0.0-beta.56",
+    "@babel/node": "^7.0.0-rc.1",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0-rc.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.54",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.0.0-beta.56",
+    "@babel/register": "^7.6.2",
+    "@babel/runtime": "^7.0.0",
+    "babel-loader": "^8.0.0-beta.4",
+    "copy-webpack-plugin": "^4.5.2",
+    "fs-extra": "^7.0.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^8.0.0",
+    "jquery": "^3.3.1"
+  }
+}

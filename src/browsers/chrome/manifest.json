@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "Русификация Asana",
+  "description": "Данное расширение позволяет использовать сервис Asana на русском языке",
+  "version": "1.0.0",
+  "icons": {
+    "16": "/assets/images/16.png",
+    "24": "/assets/images/24.png",
+    "32": "/assets/images/32.png",
+    "64": "/assets/images/64.png",
+    "128": "/assets/images/128.png",
+    "256": "/assets/images/256.png",
+    "512": "/assets/images/512.png"
+  },
+  "externally_connectable": {
+    "matches": [
+      "*://*.asana.com/*"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.asana.com/*"
+      ],
+      "js": [
+        "/assets/js/vendors.js",
+        "/assets/js/app.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    "/assets/js/*",
+    "/assets/images/*"
+  ],
+  "browser_action": {
+    "default_icon": "/assets/images/64.png"
+  },
+  "homepage_url": "https://rocketsales.ru"
+}
