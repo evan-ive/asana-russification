@@ -1,7 +1,7 @@
 export const phrases = {
 
   /**
-   * 0. Общие
+   * 0. Общие и прочее
    */
 
   'Task': 'Задача',
@@ -9,8 +9,115 @@ export const phrases = {
   'Team': 'Команда',
   'Project': 'Проект',
   'Invite': 'Приглашение',
-
   'Upgrade': 'Премиум',
+
+  //dgraid
+  'This project is archived.': 'Этот проект заархивирован.',
+  'Join': 'Войти',
+  'Restore': 'Восстановить',
+  'Click here to add a task…': 'Нажмите здесь, чтобы добавить задачу…',
+  'Close details': 'Скрыть подробности',
+  'Weeks': 'Недели',
+  'Creating Timeline... This may take some time': 'Создаю таймлайн... Это может занять несколько секунд',
+  'Follow Conversation': 'Следить за обсуждением',
+  'All completed tasks': 'Все завершённые задачи',
+  'Marked complete since:': 'Завершены за:',
+  '1 week': '1 неделю',
+  '2 weeks': '2 недели',
+  '3 weeks': '3 недели',
+  'Assigned to': 'Назначены на',
+  'In projects': 'В проектах',
+  'Followed by': 'Подписчики',
+  'Completion': 'Завершение',
+  'Incomplete': 'Не завершено',
+  'Any': 'Все',
+  'Has attachments': 'Есть вложения',
+  'Within the next': 'В ближайшие',
+  'Within the last': 'За последние',
+  'Between': 'Между',
+  'Days': 'Дней',
+  'Months': 'Месяцы',
+  'Add filter': 'Добавить фильтр',
+  'Contains the words': 'Содержит слова',
+  'Add Custom Field': 'Добавить поле',
+  'Subtask': 'Подзадача',
+  'Subtasks only': 'Только подзадачи',
+  'Not subtasks': 'Не подзадачи',
+  'For': 'Для',
+  'Task Name': 'Название задачи',
+  'in': 'в',
+  'Create Task': 'Создать задачу',
+  'Add Followers': 'Добавить подписчиков',
+  'Added': 'Добавлено',
+  'Choose a project template': 'Выберите шаблон проекта',
+  'Blank Project': 'Пустой проект',
+  'General templates': 'Популярные шаблоны',
+  'Add project details': 'Создание нового проекта',
+  'Project name': 'Название проекта',
+  'Add a description': 'Добавить описание',
+  'Default view': 'Вид по умолчанию',
+  'Privacy': 'Приватность',
+  'Download': 'Скачать',
+  'Invite teammates via email': 'Пригласить коллег по email',
+  'Add to a Project': 'Добавить в проект',
+  'Private Project': 'Приватный проект',
+  'added you as a follower.': 'добавил вас как подписчика.',
+  'You have a task due': 'По вашей задаче наступил срок',
+  'Create project for': 'Создать проект для',
+  'liked your comment.': 'понравился ваш комментарий.',
+
+
+
+  //Справка
+  'Asana quick start': 'Быстрый старт в Asana',
+  'Help with features': 'Помощь по функциям',
+  'Apps and integrations': 'Виджеты и интеграции',
+  'Ways to use Asana': 'Возможности Asana',
+  'Keyboard shortcuts': 'Горячие клавиши',
+  'Privacy policy': 'Политика безопасности',
+  'Contact support': 'Связаться с поддержкой',
+  'Watch tutorial videos': 'Обучающие видео',
+  'Keyboard Shortcuts': 'Горячие клавиши',
+
+
+  //'incomplete': 'незавершено',
+  //'completed': 'завершено',
+
+  //Формы
+  'Collect the info your team needs with Forms': 'Собирайте необходимую для команды информацию с помощью форм',
+  'Standardize how your team receives work requests and automatically turn them into tasks so nothing falls through the cracks.': 'Стандартизируйте сбор новых запросов от команды и сразу превращайте их в задачи, чтобы ничего не пропало.',
+  'Create a form': 'Создать форму',
+  'Form editor': 'Редактор форм',
+  'Add a description to this form': 'Добавьте описание к этой форме',
+  'Form active': 'Форма активна',
+  'View form': 'Посмотреть форму',
+  'Copy form link': 'Скопировать ссылку на форму',
+  'Add questions': 'Добавить вопросы',
+  'Create a question using these custom fields or add your own.': 'Создавайте вопросы использую дополнительные поля или создайте новые.',
+  'Available custom fields': 'Доступные поля',
+  'No custom fields in this project': 'Нет индивидуальных полей в этом проекте',
+  'New question': 'Новый вопрос',
+  'Email address': 'Email адрес',
+  'Settings': 'Настройки',
+  'Select a field for task titles': 'Выберите поле для названия задачи',
+  'Form name': 'Название формы',
+  'Always send tasks to': 'Всегда назначать задачу на',
+  'No assignee': 'Нет ответственного',
+  'Submitter name': 'Имя респондента',
+  'Submitter email': 'Email респондента',
+  'Add question description': 'Добавить описание вопроса',
+  'Question description': 'Описание вопроса',
+  'Required': 'Обязательное',
+  'Delete form': 'Удалить форму',
+  'Paragraph text': 'Текстовый блок',
+  'Single line text': 'Текст одной строкой',
+  'Number': 'Число',
+  'Drop-down': 'Выпадающий список',
+  'Multi-select': 'Мульти-выбор',
+  'Date': 'Дата',
+  'Attachment': 'Вложение',
+
+
 
   /**
    * 1. Сайдбар
@@ -20,7 +127,7 @@ export const phrases = {
   'My Tasks': 'Мои задачи',
   'Inbox': 'Уведомления',
   'Dashboard': 'Рабочий стол',
-  'Portfolios': 'Портфолио',
+  'Portfolios': 'Портфели',
   'Show more': 'Показать больше',
   'Invite your team and start collaborating!': 'Пригласите свою команду и начните работать вместе!',
   'Invite to Asana': 'Пригласить в Asana',
@@ -37,8 +144,33 @@ export const phrases = {
   'Add Team': 'Добавить команду',
   'Browse Other Teams': 'Посмотреть другие команды',
 
+  //by @dgraid
+  'Remove from Favorites': 'Убрать из избранного',
+  'All Items': 'Все задачи',
+  'Deleted Items': 'Удалённые задачи',
+  'Show less': 'Скрыть лишнее',
+  'Show less': 'Скрыть лишнее',
+  'Duplicate Project…': 'Создать копию…',
+  'Remove Report': 'Удалить отчёт',
+  'Invite People': 'Пригласить…',
+  'Edit Team Settings…': 'Настройки команды…',
+  'Start a Conversation via Email…': 'Обсуждение по Email…',
+  'Remove me from this Team': 'Покинуть эту команду',
+  'Create project': 'Создать проект',
+  'Use a template': 'Выбрать шаблон',
+  'Import spreadsheet': 'Импорт из таблицы',
+  'Blank project': 'Пустой проект',
+  'Invite people': 'Пригласить…',
+  'Color': 'Цвет',
+  'Add to Favorites': 'Добавить в избранное',
+  'More archived projects…': 'Ещё архивные проекты…',
+  'Show more projects': 'Показать больше проектов',
+  'Private to project members': 'Доступен только участнкам проекта',
+  'Public to': 'Доступен',
+
+
   /**
-   * 2. Дашборд
+   * 2. Дашборд / Главная
    */
 
   'My Dashboard': 'Мой рабочий стол',
@@ -51,6 +183,23 @@ export const phrases = {
   'Projects alphabetically': 'Проекты по алфавиту',
 
   'Get views across more projects with unlimited dashboards.': 'Получите преимущества с неограниченными рабочими столами.',
+
+  //by @dgraid
+  'Tasks Due Soon': 'Срочные задачи',
+  'These are your most urgent tasks due in the next five days.': 'Здесь собраны наиболее срочные задачи со сроком выполнения в ближайшие пять дней',
+  'See all my tasks': 'Все мои задачи',
+  'View as tiles': 'В виде плитки',
+  'View as list': 'В виде списка',
+  'Copy Project Link': 'Скопировать ссылку проекта',
+  'Share…': 'Поделиться…',
+  'Recent Projects': 'Недавние проекты',
+  //Не получилось 'Visited today': 'Просмотрен сегодня',
+  //Не получилось 'Visited yesterday': 'Просмотрен вчера',
+  //Не получилось '13 projects': '13 проектов',
+  'Archived': 'Архивный',
+  'Private': 'Приватный',
+  'New Project': 'Новый проект',
+
 
   /**
    * 3. Даты
@@ -136,7 +285,10 @@ export const phrases = {
   'Conversations': 'Обсуждения',
   'Progress': 'Прогресс',
   'Files': 'Файлы',
-  'Share': 'Настройки доступа',
+  'Share': 'Доступ',
+  //by @dgraid
+  'Search': 'Поиск',
+  'More…': 'Ещё…',
 
   /**
    * 4.1. Поиск
@@ -152,6 +304,8 @@ export const phrases = {
   'Advanced Search': 'Расширенный поиск',
 
   'All': 'Все',
+
+
 
   /**
    * 5. Inbox
@@ -182,7 +336,7 @@ export const phrases = {
   'attached {attachmentUrl}': 'прикрепил {attachmentUrl}',
   'attached {attachmentUrl} (thumbnail pending)': 'прикрепил {attachment_link} (thumbnail pending)',
 
-  'Create Reminder Task': 'Создать напоминание',
+  'Create Reminder Task': 'Создать задачу-напоминание',
   'Unfollow Task': 'Отписаться от задачи',
   'Unfollow Project': 'Отписаться от проекта',
   'Unfollow Conversation': 'Отписаться от обсуждения',
@@ -208,6 +362,28 @@ export const phrases = {
   '<wrap>{variant}</wrap> in {teamName}': '<wrap>{variant}</wrap> в {teamName}',
 
   'and more…': 'и в других проектах…',
+
+  //by @dgraid
+  'Assigned to me': 'Мне поручили',
+  '@Mentioned': '@Упоминания',
+  'Assigned by me': 'Я поручил',
+  'Email notifications': 'Email оповещения',
+  'Snooze for one hour': 'Отключить на 1 час',
+  'Create follow-up task': 'Создать напоминание',
+  /*  'Task': 'Задача',
+   'in': 'в', */
+  /* 'Status Update': 'Обновление статуса', */
+  'Past 7 Days': 'За последние 7 дней',
+  'On Track': 'Под контролем',
+  'At Risk': 'В зоне риска',
+  'Off Track': 'Есть проблемы',
+  'Archive all': 'Архивировать всё',
+  'Follow Status Update': 'Следить за отчётами',
+  'Unfollow Status Update': 'Не следить за отчётами',
+
+
+  //Create follow-up task
+
 
   /**
    * 6. Задачи
@@ -235,6 +411,13 @@ export const phrases = {
   'Save View for Everyone': 'Сохранить вид для всех',
 
   'View: {viewMode}': 'Вид: {viewMode}',
+
+  // by dgraid
+  'Last task completed': 'Последняя задача решена',
+  'no section': 'нет секции',
+  'Add Milestone': 'Добавить майлстоун',
+  'Recently assigned': 'Недавно назначенные',
+  'Save layout as default': 'Сохранить как вид по умолчанию',
 
   /**
    * 7. Карточка
@@ -322,11 +505,26 @@ export const phrases = {
   '{string1} and {string2}': '{string1} и {string2}',
   'people who can see its parent task': 'людям, которые имеют доступ к родительской задаче',
 
-  'Attachments': 'Приложения',
+  'Attachments': 'Вложения',
   'Add a file to this task.': 'Добавить файл в эту задачу.',
   'Subtasks': 'Подзадачи',
   'Add a task within this task. Subtasks can have different assignees and due dates.': 'Добавить задачу в эту задачу. Подзадачи также могут иметь ответственных и даты завершения',
   'Copy Task URL': 'Скопировать URL задачи',
+
+  //@dgraid
+  'Copy task link': 'Скопировать ссылку на задачу',
+  'Add to another project': 'Добавить ещё в один проект',
+  'Duplicate task': 'Создать копию задачи',
+  'Mark as Milestone': 'Превратить в майлстоун',
+  'Mark as dependent on': 'Задача зависит от…',
+  'Add tags': 'Добавить тэги',
+  'Print': 'Распечатать',
+  'Advanced actions': 'Дополнительные действия',
+  'Delete task': 'Удалить задачу',
+  'Make a subtask of': 'Указать корневую задачу…',
+  'Convert to a project': 'Превратить в проект',
+  'Merge duplicate tasks': 'Склеить с другой копией',
+  'Full screen': 'На весь экран',
 
   /**
    * 7.1. Комментарии
@@ -423,6 +621,14 @@ export const phrases = {
   '{people} liked this.': '{people} понравилось это',
   '{user} and {otherUser} liked this': '{user} и {otherUser} понравилось это',
 
+  //by dgraid
+
+  'Hide Earlier Comments': 'Скрыть ранние комментарии',
+  'Ask a question or post an update…': 'Задать вопрос или написать комментарий…',
+  'Unpin from Top': 'Открепить',
+  'created this task': 'создал эту задачу',
+
+
   /**
    * 7.2. Меню
    */
@@ -447,8 +653,16 @@ export const phrases = {
   'Organization Settings…': 'Настройки организации…',
   'My Profile Settings': 'Настройки моего профиля',
   'My Profile Settings…': 'Настройки моего профиля…',
-  'More': 'Больше',
+  'More': 'Ещё…',
   'Log Out': 'Выход',
+
+  //dgraid
+  'Add Seats': 'Добавить лицензии',
+  'Admin Console': 'Настройки организации…',
+  //'AsanaPlugin…': 'Асана Плагин…',
+  'Remove me from this Organization': 'Покинуть эту организацию',
+  'Create new team in': 'Создать новую команду в',
+
 
   /**
    * 8.1. Табы
@@ -468,7 +682,7 @@ export const phrases = {
 
   'Asana can send notifications to any email address you choose.': 'Asana может отправлять уведомления на email, которые вы выберите.',
 
-  'Task reminders': 'Напоминания',
+  'Task reminders': 'Напоминания о задачах',
   'Daily summary emails about tasks assigned to you': 'Ежедневные сводные сообщения о назначенных на вас задачах',
   'All activity': 'Активность',
   'Updates on tasks and projects you are following': 'Все обновления задач и проектов, на которые вы подписаны',
@@ -503,11 +717,79 @@ export const phrases = {
 
   'Update Profile': 'Обновить профиль',
 
+  //dgraid
+  'Your photo': 'Ваше фото',
+  'Upload new photo': 'Загрузить новое фото',
+  'Remove photo': 'Убрать фото',
+  'Photos help your teammates recognize you in Asana': 'Фото помогает вашим коллегам отличить вас в Asana',
+  'Your full name': 'Полное имя',
+  'About me': 'Обо мне',
+  'Department or team': 'Департамент или команда',
+  'Language': 'Язык',
+  //'English': 'Русский (плагин)',
+  'First day of the week': 'Первый день недели',
+  'Advanced Options': 'Продвинутые настройки',
+  'Show task row numbers': 'Показывать номера слева от задач',
+  'Enable compact mode': 'Включить компактный вид',
+  'Enable color blind friendly mode (protanopia and deuteranopia)': 'Включить альтернативные цвета (для людей с особенностями зрения)',
+  'Show occasional celebrations upon task completion': 'Показывать праздничные анимации после завершения задач',
+  'Backgrounds': 'Фоновая картинка',
+  'Save Changes': 'Сохранить изменения',
+
+
   /**
    * 9. Проекты
    */
 
   'Projects': 'Проекты',
+
+  //dgraid
+  'This project is a template.': 'Этот проект является шаблоном.',
+  'Learn more.': 'Подробнее…',
+  'Use template': 'Использовать шаблон',
+  'Edit project details': 'Редактировать детали проекта',
+  'Copy project link': 'Скопировать ссылку на проект',
+  'Duplicate': 'Создать копию проекта',
+  'Duplicate Task…': 'Создать копию задачи',
+  'Remove from templates': 'Убрать из шаблонов',
+  'Import': 'Импорт',
+  'Sync to calendar…': 'Синхронизация с календарём',
+  'Move to another team': 'Переместить в команду…',
+  'Delete project': 'Удалить проект',
+  'Project details': 'Детали проекта',
+  'Name': 'Название',
+  'Owned by': 'Владелец',
+  'Click to add description': 'Нажмите, чтобы добавить описание',
+  'Rules': 'Правила',
+  'Add Rules to your project': 'Добавьте правила в ваш проект',
+  'Save time on manual processes like triaging and assigning tasks.': 'Сэкономьте время на ручных операциях, как смена статуса и ответственного.',
+  'Let\'s go!': 'Поехали!',
+  //'Send feedback': 'Обратная связь',
+  'Task name': 'Название задачи',
+  'Add section': 'Добавить секцию',
+  'Details': 'Подробнее',
+  'Due date': 'Срок',
+  'Fields': 'Поля',
+  'Add field': 'Добавить поле',
+  'Sort by': 'Сортировать…',
+  'Move left': 'Сместить влево',
+  'Move right': 'Сместить вправо',
+  'Expand column width': 'Увеличить ширину',
+  'Hide column': 'Скрыть столбец',
+  'Sort alphabetically': 'Сортировать по имени',
+  'Alphabetical': 'По имени',
+  'Sort by likes': 'Сортировать по лайкам',
+  'Quick filters': 'Быстрые фильтры',
+  'Just my tasks': 'Только мои задачи',
+  'Due this week': 'Срок на этой неделе',
+  'Due next week': 'Срок на следующей неделе',
+  'Custom filter': 'Свой фильтр',
+  'Name or email': 'Имя или email',
+  'New!': 'Новое!',
+  'Add to project': 'Добавить в проект',
+
+
+
 
   /**
    * 9.1. Права
@@ -550,6 +832,18 @@ export const phrases = {
   'Status Updates': 'Обновление статуса',
   'Tasks Added': 'Новые задачи',
 
+  //dgraid
+  'Invite teammates': 'Пригласить коллег',
+  'Project members': 'Участники проекта',
+  'Manage notifications': 'Настроить оповещения',
+  'Member notification settings': 'Настройки оповещения участников',
+  'Private to project members.': 'Приватный для участников проекта',
+  'Status updates': 'Обновление статуса',
+  'Tasks added': 'Новые задачи',
+  //'Share !Дмитрий Изотов': 'Доступ к !Дмитрий Изотов',
+
+
+
   /**
    * 9.2. Доски
    */
@@ -588,4 +882,97 @@ export const phrases = {
   'Archive Project': 'Архивировать проект',
   'Unarchive Project': 'Разархивировать проект',
   'Delete Project': 'Удалить проект',
+
+
+  /**
+   * 10. Портфели
+   */
+
+  'Portfolios and Workload': 'Портфели и Нагрузка',
+  'Favorite portfolios': 'Избранные портфели',
+  'Recent portfolios': 'Недавние портфели',
+  'New Portfolio': 'Новый портфель',
+  'Portfolio Name': 'Название портфеля',
+  'For example: "Marketing dashboard" or "Team objectives"': 'Например: "Проекты Маркетинга" или "Цели Команды"',
+  // 'Asana Tip:': 'Подсказка от Asana:',
+  // ' Use Portfolios to track a group of projects, like an objective or initiative. ': ' Используйте портфели',
+  'Create Portfolio': 'Создать портфель',
+  'No recent updates': 'Нет обновлений',
+  'Status': 'Обновление статуса',
+  'Milestones': 'Майлстоуны',
+  'Add Project': 'Добавить проект',
+  'Dates': 'Даты',
+  'Project Owner': 'Владелец проекта',
+  'Project Name': 'Название проекта',
+  'Milestone': 'Майлстоун',
+  'Workload': 'Нагрузка',
+  'No milestones': 'Нет майлстоунов',
+  'No status updates, yet.': 'Пока нет обновлений статуса.',
+  'Keep your team in the loop by updating the status of this project.': 'Держите команду в курсе дел регулярно обновляя статус этого проекта',
+  'Stay in the loop by requesting an update from the project owner.': 'Будьте в курсе дел запросив новый статус у владельца этого проекта',
+  'Request Status Update': 'Запросить обновление статуса',
+  'Completed Task': 'Завершённая задача',
+  'Latest Status': 'Текущий статус',
+  'About this Project': 'Информация о проекте',
+  'Click to add project description…': 'Нажмите, чтобы добавить описание проекта',
+  'Add milestones to specify important checkpoints in this project.': 'Добавьте майлстоуны, чтобы определить ключевые этапы этого проекта.',
+  'Milestone name': 'Название майлстоуна',
+  'Examples: "Design Approved" or "Launch"': 'Например: "Дизайн согласован" или "Запуск"',
+  'Cancel': 'Отмена',
+  'Update Status': 'Обновить статус',
+  'Insights': 'Инсайты',
+  'Overdue Tasks': 'Просроченные задачи',
+  'Learn more': 'Подробнее…',
+  //'created this project.': 'создал этот проект.',
+  'Go to Project': 'Перейти к проекту',
+  //'Progress type:': 'Тип прогресса:',
+  'Remind me to update the status every Friday': 'Напоминать мне обновлять статус каждую пятницу',
+  'Set a status…': 'Укажите статус…',
+  'Set status': 'Указать статус',
+  'Post': 'Написать',
+  'New Status Update': 'Новый статус проекта',
+  'What\'s been done? What\'s next? What\'s blocked?': 'Что было сделано? На чём сфокусируемся в дальнейшем? Что мешает проекту?',
+  'Copy Portfolio Link': 'Ссылка на портфель',
+  'Copy portfolio link': 'Ссылка на портфель',
+  'Rename…': 'Переименовать…',
+  'Rename Portfolio': 'Переименовать портфель',
+  'Export': 'Экспорт',
+  'Delete Portfolio': 'Удалить портфель',
+  'Remove as Portfolio Owner': 'Убрать владельца портфеля',
+  'Set as Portfolio Owner': 'Назначить владельцем портфеля',
+  'Remove from Portfolio': 'Убрать из портфеля',
+  'Add portfolio members by name…': 'Добавьте участников в портфель по имени',
+  'Member': 'Участник',
+  'Task Progress': 'Прогресс задач',
+
+  //TEAM
+  'Create new team': 'Создание новой команды',
+  'Team Name': 'Название команды',
+  'For example: "Marketing" or "Design"': 'Например: "Маркетинг" или "Дизайн"',
+  'Members': 'Участники',
+  'Add team members by name or email…': 'Добавьте участников по имени или email…',
+  'Membership by Request': 'Участники могут отправить запрос на вступление',
+  'Hidden': 'Скрытая',
+  'Public to Organization': 'Доступна всей организации',
+  'Create Team': 'Создать команду',
+
+
+  /* TODO
+  Сборные слова
+  Приглашение в Асана
+  Создание Обсуждения
+  Хэлперы над контроллерами (наведение на доступ, )
+  Добавление проекта (из раздела портфелей)
+  Раздел нагрузка
+  Разделы в профиле (уведомления на почту)
+  
+  Надо сделать какую то рекламу
+  Другой значёк
+  
+  
+  */
+
+
+
+
 }
