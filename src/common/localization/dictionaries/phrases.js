@@ -65,6 +65,7 @@ export const phrases = {
   'You have a task due': 'По вашей задаче наступил срок',
   'Create project for': 'Создать проект для',
   'liked your comment.': 'понравился ваш комментарий.',
+  'New - Timeline View': 'Новое - вид Таймлайн',
 
 
 
