@@ -1,6 +1,5 @@
 export default (enDictionary) => {
-
-  window.translateHelper = function (phrase, strict) {
+  window.translateHelper = function translateHelper (phrase, strict) {
 
     let length = typeof strict === 'number' && strict
 
@@ -9,33 +8,23 @@ export default (enDictionary) => {
     })
 
     function recursiveSearch (item, code) {
+      if (!item) return
 
       if (typeof item === 'object') {
-
         return Object.keys(item).forEach(key => {
           recursiveSearch(item[key], code)
         })
-
       }
 
-      if (!item.match || !item.match(phrase)) {
-        return
-      }
+      if (!item.match || !item.match(new RegExp(phrase, 'igm'))) return
 
-      let check
-
-      if (strict) {
-        check = length && item.length === length || item === phrase
-      } else {
-        check = true
-      }
+      let check = strict
+        ? length && item.length === length || item === phrase
+        : true
 
       if (check) {
         console.log(code, item)
       }
-
     }
-
   }
-
 }
