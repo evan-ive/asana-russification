@@ -79,10 +79,8 @@ export const phrases = {
   'Contact support': 'Связаться с поддержкой',
   'Watch tutorial videos': 'Обучающие видео',
   'Keyboard Shortcuts': 'Горячие клавиши',
-
-
-  //'incomplete': 'незавершено',
-  //'completed': 'завершено',
+  '{count} incomplete': '{count} незавершено',
+  '{count} completed': '{count} завершено',
 
   //Формы
   'Collect the info your team needs with Forms': 'Собирайте необходимую для команды информацию с помощью форм',
@@ -194,9 +192,10 @@ export const phrases = {
   'Copy Project Link': 'Скопировать ссылку проекта',
   'Share…': 'Поделиться…',
   'Recent Projects': 'Недавние проекты',
-  //Не получилось 'Visited today': 'Просмотрен сегодня',
-  //Не получилось 'Visited yesterday': 'Просмотрен вчера',
-  //Не получилось '13 projects': '13 проектов',
+  'Visited {absoluteDate}': 'Просмотрен {absoluteDate}',
+  'Visited {relativeDate}': 'Просмотрен {relativeDate}',
+  '{count} projects': '{count} проектов',
+  '{count} project': '{count} проект',
   'Archived': 'Архивный',
   'Private': 'Приватный',
   'New Project': 'Новый проект',
@@ -346,6 +345,9 @@ export const phrases = {
   '<wrap>Task</wrap> in {teamName}': '<wrap>Задача</wrap> в {teamName}',
   '<wrap>Task</wrap> in <link>{teamName}</link>': '<wrap>Задача</wrap> в <link>{teamName}</link>',
   '<wrap>Task</wrap> in{nbsp}{groupName}': '<wrap>Задача</wrap> в{nbsp}{groupName}',
+  '<wrap>Task</wrap> in{nbsp}{groupName1}{groupName2}': '<wrap>Задача</wrap> в{nbsp}{groupName1}{groupName2}',
+  '<wrap>Task</wrap> in{nbsp}{groupName1}{groupName2}{andMoreToken}': '<wrap>Задача</wrap> в{nbsp}{groupName1}{groupName2}{andMoreToken}',
+  '<wrap>Task</wrap> in{nbsp}{groupName1}{groupName2}{groupName3}': '<wrap>Задача</wrap> в{nbsp}{groupName1}{groupName2}{groupName3}',
 
   '<wrap>Project</wrap> in': '<wrap>Проект</wrap> в',
   '<wrap>Project</wrap> in {teamName}': '<wrap>Проект</wrap> в {teamName}',
@@ -371,9 +373,6 @@ export const phrases = {
   'Email notifications': 'Email оповещения',
   'Snooze for one hour': 'Отключить на 1 час',
   'Create follow-up task': 'Создать напоминание',
-  /*  'Task': 'Задача',
-   'in': 'в', */
-  /* 'Status Update': 'Обновление статуса', */
   'Past 7 Days': 'За последние 7 дней',
   'On Track': 'Под контролем',
   'At Risk': 'В зоне риска',
@@ -381,6 +380,12 @@ export const phrases = {
   'Archive all': 'Архивировать всё',
   'Follow Status Update': 'Следить за отчётами',
   'Unfollow Status Update': 'Не следить за отчётами',
+  '<wrap>Status Update</wrap> in': '<wrap>Статус обновлён</wrap> в',
+  '<wrap>Status Update</wrap> in {teamName}': '<wrap>Статус обновлён</wrap> в {teamName}',
+  '<wrap>Status Update</wrap> in{nbsp}{groupName1}{groupName2}': '<wrap>Статус обновлён</wrap> в{nbsp}{groupName1}{groupName2}',
+  '<wrap>Status Update</wrap> in{nbsp}{groupName1}{groupName2}{andMoreToken}': '<wrap>Статус обновлён</wrap> в{nbsp}{groupName1}{groupName2}{andMoreToken}',
+  '<wrap>Status Update</wrap> in{nbsp}{groupName1}{groupName2}{groupName3}': '<wrap>Статус обновлён</wrap> в{nbsp}{groupName1}{groupName2}{groupName3}',
+  '<wrap>Status Update</wrap> in{nbsp}{groupName}': '<wrap>Статус обновлён</wrap> в{nbsp}{groupName}',
 
 
   //Create follow-up task
