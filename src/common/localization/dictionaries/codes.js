@@ -7,4 +7,7 @@ export const codes = {
   'zq684j': 'Ч',
   'dbd58t': 'С',
   '1urytqc': 'В',
+  '1qklck6': '<you>У вас</you> есть задача со сроком {dueDateTime}.',
+  '18s1p7a': '<youLink>У вас</youLink> есть задача со сроком {dueDateTime}.',
+
 }

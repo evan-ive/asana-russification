@@ -62,11 +62,47 @@ export const phrases = {
   'Add to a Project': 'Добавить в проект',
   'Private Project': 'Приватный проект',
   'added you as a follower.': 'добавил вас как подписчика.',
-  'You have a task due': 'По вашей задаче наступил срок',
-  'Create project for': 'Создать проект для',
-  'liked your comment.': 'понравился ваш комментарий.',
-  'New - Timeline View': 'Новое - вид Таймлайн',
+  //'You have a task due': 'По вашей задаче наступил срок',
+  'No tasks due in the next five days': 'Нет задач со сроком в ближайшие 5 д',
+  'Create Project for \'{name}\'': 'Создать проект для \'{name}\'',
+  'Create project for \'{name}\'': 'Создать проект для \'{name}\'',
+  'Move to another project': 'Перенести в другой проект',
+  'Show more tasks': 'Показать остальные задачи',
 
+  'New - Timeline View': 'Новое - вид Таймлайн',
+  '(away through {date})': '(отсутствует до {date})',
+  //'<you>You</you> have a task due {dueDateTime}.': '<you>Вы</you> есть задача со сроком {dueDateTime}.',
+  //'<youLink>You</youLink> have a task due {dueDateTime}.': '<youLink>Вы</youLink> есть задача со сроком {dueDateTime}.',
+  '{actorName} have a task due {dueDate}.': '{actorName} есть задача со сроком {dueDate}.',
+  '{actorName} have a task due.': '{actorName} есть задача со сроком.',
+
+  //liked your comment
+  '<link>{creatorName}</link> liked your comment': '<link>{creatorName}</link> понравился ваш комментарий',
+  'Someone liked your comment': 'Кому-то понравился ваш комментарий',
+  'liked your comment': 'понравился ваш комментарий',
+  '{actor} liked your comment': '{actor} понравился ваш комментарий',
+  '{listOfActors} liked your comment': '{listOfActors} понравился ваш комментарий',
+  '{userName1} and {userName2} liked your comment': '{userName1} и {userName2} понравился ваш комментарий',
+  '{userName1} liked your comment': '{userName1} понравился ваш комментарий',
+  '{userName1}, {userName2}, and {numberAtLeast2} others liked your comment': '{userName1}, {userName2}, и ещё {numberAtLeast2} понравился ваш комментарий',
+  '{userName1}, {userName2}, and {userName3} liked your comment': '{userName1}, {userName2} и {userName3} понравился ваш комментарий',
+
+  '<link>{creatorName}</link> liked that you completed this task': '<link>{creatorName}</link> понравилось, что вы завершили эту задачу',
+  'Someone liked that you completed this task': 'Кому-то понравилось, что вы завершили эту задачу',
+  'liked that you completed this task': 'понравилось, что вы завершили эту задачу',
+  '{actor} liked that you completed this task': '{actor} понравилось, что вы завершили эту задачу',
+  '{userName1} and {userName2} liked that you completed this task': '{userName1} и {userName2} понравилось, что вы завершили эту задачу',
+  '{userName1} liked that you completed this task': '{userName1} понравилось, что вы завершили эту задачу',
+  '{userName1}, {userName2}, and {numberAtLeast2} others liked that you completed this task': '{userName1}, {userName2}, и ещё {numberAtLeast2} понравилось, что вы завершили эту задачу',
+  '{userName1}, {userName2}, and {userName3} liked that you completed this task': '{userName1}, {userName2} и {userName3} понравилось, что вы завершили эту задачу',
+
+  //marked this task complete
+  'marked this task complete': 'завершил эту задачу',
+  'marked this task complete.': 'завершил эту задачу.',
+  '{Someone} marked this task complete': '{Someone} завершил эту задачу',
+  '{actorName} marked this task complete.': '{actorName} завершил эту задачу.',
+  '<link>{creatorName}</link> marked incomplete': '<link>{creatorName}</link> открыл задачу снова',
+  'marked incomplete': 'открыл задачу снова',
 
 
   //Справка
@@ -386,9 +422,11 @@ export const phrases = {
   '<wrap>Status Update</wrap> in{nbsp}{groupName1}{groupName2}{andMoreToken}': '<wrap>Статус обновлён</wrap> в{nbsp}{groupName1}{groupName2}{andMoreToken}',
   '<wrap>Status Update</wrap> in{nbsp}{groupName1}{groupName2}{groupName3}': '<wrap>Статус обновлён</wrap> в{nbsp}{groupName1}{groupName2}{groupName3}',
   '<wrap>Status Update</wrap> in{nbsp}{groupName}': '<wrap>Статус обновлён</wrap> в{nbsp}{groupName}',
-
-
-  //Create follow-up task
+  '{actor} added you as a follower.': '{actor} добавил вас в подписчики.',
+  '<link>{creatorName}</link> added you as a follower': '<link>{creatorName}</link> добавил вас в подписчики',
+  'added you as a follower': 'добавил вас в подписчики',
+  '{adderName} added you as a follower': '{adderName} добавил вас в подписчики',
+  '{creatorName} added you as a follower': '{creatorName} добавил вас в подписчики',
 
 
   /**
@@ -419,7 +457,9 @@ export const phrases = {
   'View: {viewMode}': 'Вид: {viewMode}',
 
   // by dgraid
-  'Last task completed': 'Последняя задача решена',
+  'Last task completed more than a month ago': 'Последняя задача завершена более месяца назад',
+  'Last task completed on {date}': 'Последняя задача завершена в {date}',
+  'Last task completed {date}': 'Последняя задача завершена {date}',
   'no section': 'нет секции',
   'Add Milestone': 'Добавить майлстоун',
   'Recently assigned': 'Недавно назначенные',
@@ -462,10 +502,13 @@ export const phrases = {
 
   'Never': 'Никогда',
   'Daily': 'Ежедневно',
-  'Periodically': 'Периодичнски',
+  'Periodically': 'Периодически',
   'Weekly': 'Еженедельно',
   'Monthly': 'Ежемесячно',
   'Yearly': 'Ежегодно',
+  'Due Time': 'Время',
+  'Start Date': 'Дата старта',
+
 
   'every {numberDropdown} week on{daysCheckbox}': 'каждую {numberDropdown} неделю в{daysCheckbox}',
   'every {numberDropdown} weeks on{daysCheckbox}': 'каждую {numberDropdown} нед. в{daysCheckbox}',
@@ -484,6 +527,23 @@ export const phrases = {
   'Completed': 'Завершено',
   'Write a comment…': 'Написать комментарий…',
   'Comment': 'Написать',
+  'Show {count} previous updates': 'Показать {count} предыдущих комментариев',
+  'marked today': 'наметил на сегодня',
+  'unmarked today': 'убрал из сегодня',
+  '<link>{creatorName}</link> marked today': '<link>{creatorName}</link> наметил на сегодня',
+  '<link>{creatorName}</link> unmarked today': '<link>{creatorName}</link> убрал из сегодня',
+  '<link>{creatorName}</link> removed from <listLink>{listName}</listLink>': '<link>{creatorName}</link> убрал из <listLink>{listName}</listLink>',
+  'removed from {taskList}': 'убрал из {taskList}',
+  'removed from {optListName}': 'убрал из {optListName}',
+  'marked <link>{taskName}</link> as a duplicate of this.': 'пометил <link>{taskName}</link> как дубль этой задачи.',
+  'marked {navigation_link} as a duplicate of this': 'пометил {navigation_link} как дубль этой задачи.',
+  '<link>{creatorName}</link> changed {customField} to {value}': '<link>{creatorName}</link> изменил {customField} на {value}',
+  '<link>{creatorName}</link> marked this task as a milestone': '<link>{creatorName}</link> превратил эту задачу в майлстоун',
+  '<link>{creatorName}</link> unmarked this task as a milestone': '<link>{creatorName}</link> превратил этот майлстоун в задачу',
+  'marked this task as a milestone': 'превратил эту задачу в майлстоун',
+  'unmarked this task as a milestone': 'превратил этот майлстоун в задачу',
+  'changed {property} to "{newValue}"': 'изменил {property} на "{newValue}"',
+  'changed {custom_field} to "{value}"': 'изменил {custom_field} на "{value}"',
 
   'Add this task to a project.': 'Добавить задачу в проект.',
   'Add this task to another project': 'Добавить задачу в ещё один проект',
@@ -575,8 +635,8 @@ export const phrases = {
   'reassigned to {new_assignee}': 'переназначил на {new_assignee}',
   'reassigned to {userName}.': 'переназначил на {userName}.',
 
-  'Unassigned from You': 'Снял с вас ответственность',
-  'unassigned from you': 'Снял с вас ответственность',
+  'Unassigned from You': 'снял с вас ответственность',
+  'unassigned from you': 'снял с вас ответственность',
   'unassigned from {assigneeName}': 'снял ответтсвенность с {assigneeName}',
 
   'moved this Task from {fromColumn} to {toColumn}': 'переместил эту задачу из {fromColumn} в {toColumn}',
@@ -664,10 +724,33 @@ export const phrases = {
 
   //dgraid
   'Add Seats': 'Добавить лицензии',
-  'Admin Console': 'Настройки организации…',
-  //'AsanaPlugin…': 'Асана Плагин…',
+  'Admin Console': 'Администрирование…',
   'Remove me from this Organization': 'Покинуть эту организацию',
   'Create new team in': 'Создать новую команду в',
+  'Preferred email': 'Предпочтительный email',
+  'Send me email notifications for:': 'Отправлять мне email уведомления о:',
+  'Activity updates': 'Обновлённые активности',
+  'New tasks assigned to you, @mentions, and completion notifications for tasks you\'re following': 'Новые назначенные на вас задачи, @упоминания, и уведомления о завершении задач на которые вы подписаны',
+  'Daily summaries': 'Ежедневная сводка',
+  'New tasks assigned to you and upcoming due dates': 'Новые задачи назначенные на вас и задачи с близким сроком',
+  'Weekly reports': 'Еженедельные отчёты',
+  'Status updates on projects in your portfolios': 'Обновления статуса проектов в ваших портфелях',
+  'About notifications': 'Про уведомления',
+  'Email Forwarding': 'Email пересылка',
+  'You can create tasks & conversations from email addresses associated with Asana.': 'Вы можете создавать задачи и обсуждения отправляя email сообщения с привязанного к Asana email адреса',
+  'Organizations and Workspaces': 'Организации и Воркспейсы',
+  'Organizations': 'Организации',
+  'Workspaces': 'Воркспейсы',
+  'Create new workspace': 'Создать новый воркспейс',
+  'Password': 'Пароль',
+  'Change the password for your account': 'Изменить пароль к вашему аккаунту',
+  'Change password': 'Изменить пароль',
+  'Security': 'Безопасность',
+  'Log out of all sessions except this current browser': 'Выйти из всех сессий браузеров кроме текущего',
+  'Log out other sessions': 'Выйти из других сессий',
+  'Deactivation': 'Деактивация',
+  'Remove access to all organizations and workspaces in Asana': 'Убрать доступ ко всем организациям и вокрспейсам Asana',
+  'Deactivate account': 'Деактивировать аккаунт',
 
 
   /**
@@ -732,7 +815,6 @@ export const phrases = {
   'About me': 'Обо мне',
   'Department or team': 'Департамент или команда',
   'Language': 'Язык',
-  //'English': 'Русский (плагин)',
   'First day of the week': 'Первый день недели',
   'Advanced Options': 'Продвинутые настройки',
   'Show task row numbers': 'Показывать номера слева от задач',
@@ -846,7 +928,8 @@ export const phrases = {
   'Private to project members.': 'Приватный для участников проекта',
   'Status updates': 'Обновление статуса',
   'Tasks added': 'Новые задачи',
-  //'Share !Дмитрий Изотов': 'Доступ к !Дмитрий Изотов',
+  'Share {project}': 'Доступ к {project}',
+  'Share {portfolio}': 'Доступ к {project}',
 
 
 
@@ -900,8 +983,7 @@ export const phrases = {
   'New Portfolio': 'Новый портфель',
   'Portfolio Name': 'Название портфеля',
   'For example: "Marketing dashboard" or "Team objectives"': 'Например: "Проекты Маркетинга" или "Цели Команды"',
-  // 'Asana Tip:': 'Подсказка от Asana:',
-  // ' Use Portfolios to track a group of projects, like an objective or initiative. ': ' Используйте портфели',
+  '<b>Asana Tip:</b> Use Portfolios to track a group of projects, like an objective or initiative. <a>Learn more</a>': '<b>Подсказка Asana:</b> Используйте Портфели, чтобы отслеживать группу проектов. <a>Узнать больше</a>',
   'Create Portfolio': 'Создать портфель',
   'No recent updates': 'Нет обновлений',
   'Status': 'Обновление статуса',
@@ -929,9 +1011,9 @@ export const phrases = {
   'Insights': 'Инсайты',
   'Overdue Tasks': 'Просроченные задачи',
   'Learn more': 'Подробнее…',
-  //'created this project.': 'создал этот проект.',
+  '{owner} created this project.': '{owner} создал этот проект.',
   'Go to Project': 'Перейти к проекту',
-  //'Progress type:': 'Тип прогресса:',
+  'Progress type: {progressType}': 'Тип прогресса: {progressType}',
   'Remind me to update the status every Friday': 'Напоминать мне обновлять статус каждую пятницу',
   'Set a status…': 'Укажите статус…',
   'Set status': 'Указать статус',
@@ -950,6 +1032,11 @@ export const phrases = {
   'Add portfolio members by name…': 'Добавьте участников в портфель по имени',
   'Member': 'Участник',
   'Task Progress': 'Прогресс задач',
+  '{count} overdue tasks': '{count} просроченных задач',
+  '{count} overdue task': '{count} просроченная задача',
+  'Start typing the name of a project…': 'Начните писать название проекта…',
+  'Recommended Projects': 'Рекомендованные проекты',
+  'Create New Project': 'Создать новый проект',
 
   //TEAM
   'Create new team': 'Создание новой команды',
@@ -961,20 +1048,64 @@ export const phrases = {
   'Hidden': 'Скрытая',
   'Public to Organization': 'Доступна всей организации',
   'Create Team': 'Создать команду',
+  'Overview': 'Обзор',
+  'Click to add team description…': 'Нажмите, чтобы добавить описание',
+  'See all members': 'Посмотреть всех участников',
+  'Members with access to specific projects': 'Участники с доступом к определённым проектам',
+  'Remove': 'Убрать',
+  'Remove Access': 'Убрать доступ',
+  'General': 'Основное',
+  'Advanced': 'Расширенное',
+  'Delete team…': 'Удалить команду…',
+  'Update Team': 'Обновить команду',
+  'Organization': 'Организация',
+  'Remove this person from the team.': 'Убрать этого человека из команды.',
+  'Grant Full Access': 'Выдать полный доступ',
+  'This person will have access to all projects in the team.': 'У этого человека будет доступ ко всем проектам команды.',
+  'Invite More Members': 'Добавить ещё участников',
+  'INVITE MORE MEMBERS': 'ДОБАВИТЬ ЕЩЁ УЧАСТНИКОВ',
+  'Send Invite': 'Отправить приглашение',
+  'Edit team settings': 'Настройки команды',
+  'Only choose this option if you want to remove {name} from all projects in this team.': 'Это действие уберёт {name} из всех проектов в этой команде.',
+  'Only choose this option if you want to remove {userName} from all projects in this team.': 'Это действие уберёт {userName} из всех проектов в этой команде.',
+  'Only choose this option if you want to remove {userName} from all tasks.': 'Это действие уберёт {userName} из всех задач.',
+  'Only choose this option if you want to remove {userName} from all tasks.': 'Это действие уберёт {userName} из всех задач.',
+  'If this person should lose all access to the {emailDomainList} Organization, <link>deprovision</link>.': 'Если необходимо полностью убрать человека из организации {emailDomainList}, нажмите <link>разжаловать</link>.',
+  'If this person should lose all access to the {emailDomainList} Organization, ask an Organization Member to deprovision.': 'Если необходимо полностью убрать человека из организации {emailDomainList}, попросите о разжаловании пользователя организации',
+  'If this person should lose all access to the {emailDomainList} Organization, contact your Administrator.': 'Если необходимо полностью убрать человека из организации {emailDomainList}, обратитесь к администратору.',
+  'Choose a team to invite people to': 'Выберите команду в которую добавить участника',
+  'Invite People to <light>{domainName}</light>': 'Пригласить участника в <light>{domainName}</light>',
+  'Invite People to Team': 'Пригласить участника в команду',
+  'Invite People to {domainName}': 'Пригласить участника в {domainName}',
+  'Invite People to {workspace}': 'Пригласить участника в {workspace}',
+  'Invite people to Asana': 'Пригласить участника в Asana',
+  'Invite people to {domainName}': 'Пригласить участника в {domainName}',
+  'Email addresses': 'Адреса email',
+  'Your teammates will get an email that gives them access to this team.': 'Ваши коллеги получат email, которые даёт им доступ в эту команду.',
+  '{count} Members': '{count} Участников',
+  '{count} Member': '{count} Участник',
+  'Select a team…': 'Выбрать команду…',
+  'Conversation title': 'Тема обсуждения',
+  'Start a conversation…': 'Начните обсуждение…',
+  'Team or Project': 'Команда или Проект',
+  'Invite \'{name}\' via email': 'Пригласить \'{name}\' по email',
+  'Assign Copies': 'Назначить копии',
+  'Create a copy of this task for each assignee.': 'Создать копию задачи для каждого ответственного.',
+  'Add people or teams': 'Добавить людей или команды',
+  'Create new team in {companyName}': 'Создать новую команду в {companyName}',
+
 
 
   /* TODO
-  Сборные слова
-  Приглашение в Асана
-  Создание Обсуждения
+  ++Сборные слова
+  ++Приглашение в Асана
+  ++Создание Обсуждения
   Хэлперы над контроллерами (наведение на доступ, )
   Добавление проекта (из раздела портфелей)
   Раздел нагрузка
-  Разделы в профиле (уведомления на почту)
-  
+  ++Разделы в профиле (уведомления на почту)
   Надо сделать какую то рекламу
   Другой значёк
-  
   
   */
 
