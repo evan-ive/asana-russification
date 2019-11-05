@@ -245,6 +245,7 @@ export const phrases = {
   '{localizedDateString} at {localizedTimeString}': '{localizedDateString} в {localizedTimeString}',
   'Yesterday': 'Вчера',
   'Today': 'Сегодня',
+  'today': 'сегодня',
   'Tomorrow': 'Завтра',
   'Just now': 'Прямо сейчас',
   '1 minute ago': '1 минута назад',
@@ -929,7 +930,7 @@ export const phrases = {
   'Status updates': 'Обновление статуса',
   'Tasks added': 'Новые задачи',
   'Share {project}': 'Доступ к {project}',
-  'Share {portfolio}': 'Доступ к {project}',
+  'Share {portfolio}': 'Доступ к {portfolio}',
 
 
 
@@ -1020,6 +1021,8 @@ export const phrases = {
   'Post': 'Написать',
   'New Status Update': 'Новый статус проекта',
   'What\'s been done? What\'s next? What\'s blocked?': 'Что было сделано? На чём сфокусируемся в дальнейшем? Что мешает проекту?',
+
+
   'Copy Portfolio Link': 'Ссылка на портфель',
   'Copy portfolio link': 'Ссылка на портфель',
   'Rename…': 'Переименовать…',
