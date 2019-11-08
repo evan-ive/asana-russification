@@ -246,6 +246,7 @@ export const phrases = {
   'Yesterday': 'Вчера',
   'Today': 'Сегодня',
   'today': 'сегодня',
+  'yesterday': 'вчера',
   'Tomorrow': 'Завтра',
   'Just now': 'Прямо сейчас',
   '1 minute ago': '1 минута назад',
