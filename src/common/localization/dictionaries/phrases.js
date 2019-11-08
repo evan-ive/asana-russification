@@ -152,6 +152,9 @@ export const phrases = {
   'Date': 'Дата',
   'Attachment': 'Вложение',
 
+  //Всякие фразочки:
+  'Hooray! You\'re up-to-date with your team\'s work.': 'Ура! Вы в курсе всех дел вашей команды.',
+  'Check back later for updates on the work you\'re following.': 'Загляните сюда позже за новостями о задачах, на которые вы подписаны.',
 
 
   /**
@@ -1041,6 +1044,10 @@ export const phrases = {
   'Start typing the name of a project…': 'Начните писать название проекта…',
   'Recommended Projects': 'Рекомендованные проекты',
   'Create New Project': 'Создать новый проект',
+  'Show more portfolios': 'Показать больше портфелей',
+  'Add projects to this portfolio': 'Добавьте проекты в этот портфель',
+  'Add your team\'s key projects to make sure work stays on track.': 'Добавьте ключевые проекты вашей команды, чтобы работа была под контролем.',
+  'Add Fields': 'Добавить поля',
 
   //TEAM
   'Create new team': 'Создание новой команды',
