@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Asana - Русская версия",
   "description": "Данное расширение позволяет использовать сервис Asana на русском языке. Сделано в rocketsales.ru",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "icons": {
     "16": "/assets/images/16.png",
     "24": "/assets/images/24.png",
