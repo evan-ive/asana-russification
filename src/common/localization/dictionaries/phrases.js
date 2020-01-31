@@ -40,6 +40,9 @@ export const phrases = {
   'Add filter': 'Добавить фильтр',
   'Contains the words': 'Содержит слова',
   'Add Custom Field': 'Добавить поле',
+  'Add subtask': 'Добавить подзадачу',
+  'Add a subtask to brake up work into smaller parts.': 'Добавьте подзадачу, чтобы разбить работу на несколько частей',
+  'Add or remove collaborators': 'Добавить или убрать участников',
   'Subtask': 'Подзадача',
   'Subtasks only': 'Только подзадачи',
   'Not subtasks': 'Не подзадачи',
@@ -47,12 +50,14 @@ export const phrases = {
   'Task Name': 'Название задачи',
   'in': 'в',
   'Create Task': 'Создать задачу',
-  'Add Followers': 'Добавить подписчиков',
+  'Add Collaborators': 'Добавить участников',
   'Added': 'Добавлено',
   'Choose a project template': 'Выберите шаблон проекта',
   'Blank Project': 'Пустой проект',
   'General templates': 'Популярные шаблоны',
   'Add project details': 'Создание нового проекта',
+  'Add more detail to this task...': 'Опишите детали этой задачи...',
+  'No due date': 'Срок не указан',
   'Project name': 'Название проекта',
   'Add a description': 'Добавить описание',
   'Default view': 'Вид по умолчанию',
@@ -61,9 +66,9 @@ export const phrases = {
   'Invite teammates via email': 'Пригласить коллег по email',
   'Add to a Project': 'Добавить в проект',
   'Private Project': 'Приватный проект',
-  'added you as a follower.': 'добавил вас как подписчика.',
+  'added you as a collaborator.': 'добавил вас как участника.',
   //'You have a task due': 'По вашей задаче наступил срок',
-  'No tasks due in the next five days': 'Нет задач со сроком в ближайшие 5 д',
+  'No tasks due in the next five days': 'Нет задач со сроком в ближайшие 5 дней',
   'Create Project for \'{name}\'': 'Создать проект для \'{name}\'',
   'Create project for \'{name}\'': 'Создать проект для \'{name}\'',
   'Move to another project': 'Перенести в другой проект',
@@ -154,7 +159,10 @@ export const phrases = {
 
   //Всякие фразочки:
   'Hooray! You\'re up-to-date with your team\'s work.': 'Ура! Вы в курсе всех дел вашей команды.',
+  'You\'re up to date on your filtered notifications.': 'Вы в курсе всех ваших отфильтрованных уведомлений.',
+  'Check back later or try removing filters.': 'Загляните сюда позже или попробуйте убрать фильтр.',
   'Check back later for updates on the work you\'re following.': 'Загляните сюда позже за новостями о задачах, на которые вы подписаны.',
+  'Check back later for updates on the work you\'re a collaborator on.': 'Загляните сюда позже за новостями о задачах, в которых вы участвуете.',
 
 
   /**
@@ -378,7 +386,7 @@ export const phrases = {
   'attached {attachmentUrl} (thumbnail pending)': 'прикрепил {attachment_link} (thumbnail pending)',
 
   'Create Reminder Task': 'Создать задачу-напоминание',
-  'Unfollow Task': 'Отписаться от задачи',
+  'Follow Project': 'Подписаться на проект',
   'Unfollow Project': 'Отписаться от проекта',
   'Unfollow Conversation': 'Отписаться от обсуждения',
 
@@ -419,19 +427,19 @@ export const phrases = {
   'At Risk': 'В зоне риска',
   'Off Track': 'Есть проблемы',
   'Archive all': 'Архивировать всё',
-  'Follow Status Update': 'Следить за отчётами',
-  'Unfollow Status Update': 'Не следить за отчётами',
+  'Join Status Update': 'Следить за отчётами',
+  'Leave Status Update': 'Не следить за отчётами',
   '<wrap>Status Update</wrap> in': '<wrap>Статус обновлён</wrap> в',
   '<wrap>Status Update</wrap> in {teamName}': '<wrap>Статус обновлён</wrap> в {teamName}',
   '<wrap>Status Update</wrap> in{nbsp}{groupName1}{groupName2}': '<wrap>Статус обновлён</wrap> в{nbsp}{groupName1}{groupName2}',
   '<wrap>Status Update</wrap> in{nbsp}{groupName1}{groupName2}{andMoreToken}': '<wrap>Статус обновлён</wrap> в{nbsp}{groupName1}{groupName2}{andMoreToken}',
   '<wrap>Status Update</wrap> in{nbsp}{groupName1}{groupName2}{groupName3}': '<wrap>Статус обновлён</wrap> в{nbsp}{groupName1}{groupName2}{groupName3}',
   '<wrap>Status Update</wrap> in{nbsp}{groupName}': '<wrap>Статус обновлён</wrap> в{nbsp}{groupName}',
-  '{actor} added you as a follower.': '{actor} добавил вас в подписчики.',
-  '<link>{creatorName}</link> added you as a follower': '<link>{creatorName}</link> добавил вас в подписчики',
-  'added you as a follower': 'добавил вас в подписчики',
-  '{adderName} added you as a follower': '{adderName} добавил вас в подписчики',
-  '{creatorName} added you as a follower': '{creatorName} добавил вас в подписчики',
+  '{actor} added you as a collaborator.': '{actor} добавил вас в участники.',
+  '<link>{creatorName}</link> added you as a collaborator': '<link>{creatorName}</link> добавил вас в участники',
+  'added you as a collaborator': 'добавил вас в участники',
+  '{adderName} added you as a collaborator': '{adderName} добавил вас в участники',
+  '{creatorName} added you as a collaborator': '{creatorName} добавил вас в участники',
 
 
   /**
@@ -554,16 +562,18 @@ export const phrases = {
   'Add this task to another project': 'Добавить задачу в ещё один проект',
   'Remove project': 'Убрать из проекта',
 
-  'Followers': 'Подписчики',
-  'Edit followers': 'Редактировать подписчиков',
+  'Collaborators': 'Участники',
+  'Edit collaborators': 'Радактировать участников',
 
   'Following': 'Отписаться',
-  'Follow Task': 'Подписаться',
+  'Join Task': 'Присоединиться к задаче',
+  'Leave Task': 'Покинуть задачу',
+
 
   'Stop getting notifications about activity on this task.': 'Прекратить получать уведомления об этой задаче.',
   'Get notifications about activity on this task.': 'Начать получать уведомления об этой задаче.',
 
-  'its followers': 'подписчикам',
+  'its collaborators': 'участникам',
   'This task is private to you.': 'Эта задача является приватной для вас.',
   'Make public': 'Опубликовать',
   'This task may be visible to additional people.': 'Эта задача может быть видна другим людям.',
@@ -779,7 +789,7 @@ export const phrases = {
   'Task reminders': 'Напоминания о задачах',
   'Daily summary emails about tasks assigned to you': 'Ежедневные сводные сообщения о назначенных на вас задачах',
   'All activity': 'Активность',
-  'Updates on tasks and projects you are following': 'Все обновления задач и проектов, на которые вы подписаны',
+  'Updates on tasks and projects you are collaborating': 'Все обновления задач и проектов, в которых вы участвуете',
   'Weekly dashboard': 'Еженед. сводка',
   'Weekly summaries of project activity': 'Еженедельная сводки по проектам',
   'Personal Projects': 'Персональные проекты',
@@ -900,8 +910,8 @@ export const phrases = {
   'Who has access': 'Кто имеет доступ',
   'Add project members by name or email…': 'Добавить участников по имени или email…',
 
-  'Task followers': 'Подписчики задач',
-  'Members of {teamName} and task followers': 'Участники {teamName} и пописчики задач',
+  'Task collaborators': 'Участники задач',
+  'Members of {teamName} and task collaborators': 'Участники {teamName} и участники задач',
   'Can edit': 'Редактирование',
   'Can comment': 'Комментирование',
 
@@ -915,8 +925,8 @@ export const phrases = {
   'The team can comment, but can\'t edit anything in the project.': 'Эта команда может комментировать, но не может ничего изменить в этом проекте.',
   'This member can add, edit, and delete anything in the project.': 'Этот участник может добавлять, редактировать и удалять всё в этом проекте.',
   'This member can comment, but can\'t edit anything in the project.': 'Этот участник может комментировать, но не может ничего изменить в этом проекте.',
-  'Task followers can add, edit, and delete anything in the project.': 'Подписчики задач могут добавлять, редактировать и удалять всё в этом проекте.',
-  'Task followers can comment, but can\'t edit anything in the project.': 'Подписчики задач могут комментировать, но не могут ничего изменить в этом проекте.',
+  'Task collaborators can add, edit, and delete anything in the project.': 'Участники задач могут добавлять, редактировать и удалять всё в этом проекте.',
+  'Task collaborators can comment, but can\'t edit anything in the project.': 'Участники задач могут комментировать, но не могут ничего изменить в этом проекте.',
 
   'Manage Member Notifications': 'Настройка уведомлений участников',
   'Member Notification Settings': 'Настройка уведомлений участников',
@@ -935,6 +945,9 @@ export const phrases = {
   'Tasks added': 'Новые задачи',
   'Share {project}': 'Доступ к {project}',
   'Share {portfolio}': 'Доступ к {portfolio}',
+  'Add a message (optional)': 'Добавить сообщение (опционально)',
+  'Notify them when new tasks are added to this project': 'Уведомлять этих людей о новых задачах добавленных в проект',
+  'Send': 'Отправить',
 
 
 
@@ -1104,6 +1117,8 @@ export const phrases = {
   'Create a copy of this task for each assignee.': 'Создать копию задачи для каждого ответственного.',
   'Add people or teams': 'Добавить людей или команды',
   'Create new team in {companyName}': 'Создать новую команду в {companyName}',
+  'Add member': 'Добавить участника',
+
 
 
 
