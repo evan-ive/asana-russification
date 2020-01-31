@@ -48,7 +48,6 @@ export const phrases = {
   'Not subtasks': 'Не подзадачи',
   'For': 'Для',
   'Task Name': 'Название задачи',
-  'in': 'в',
   'Create Task': 'Создать задачу',
   'Add Collaborators': 'Добавить участников',
   'Added': 'Добавлено',
@@ -109,7 +108,6 @@ export const phrases = {
   '<link>{creatorName}</link> marked incomplete': '<link>{creatorName}</link> открыл задачу снова',
   'marked incomplete': 'открыл задачу снова',
 
-
   //Справка
   'Asana quick start': 'Быстрый старт в Asana',
   'Help with features': 'Помощь по функциям',
@@ -164,7 +162,6 @@ export const phrases = {
   'Check back later for updates on the work you\'re following.': 'Загляните сюда позже за новостями о задачах, на которые вы подписаны.',
   'Check back later for updates on the work you\'re a collaborator on.': 'Загляните сюда позже за новостями о задачах, в которых вы участвуете.',
 
-
   /**
    * 1. Сайдбар
    */
@@ -195,7 +192,6 @@ export const phrases = {
   'All Items': 'Все задачи',
   'Deleted Items': 'Удалённые задачи',
   'Show less': 'Скрыть лишнее',
-  'Show less': 'Скрыть лишнее',
   'Duplicate Project…': 'Создать копию…',
   'Remove Report': 'Удалить отчёт',
   'Invite People': 'Пригласить…',
@@ -213,7 +209,6 @@ export const phrases = {
   'Show more projects': 'Показать больше проектов',
   'Private to project members': 'Доступен только участнкам проекта',
   'Public to': 'Доступен',
-
 
   /**
    * 2. Дашборд / Главная
@@ -246,7 +241,6 @@ export const phrases = {
   'Archived': 'Архивный',
   'Private': 'Приватный',
   'New Project': 'Новый проект',
-
 
   /**
    * 3. Даты
@@ -354,8 +348,6 @@ export const phrases = {
 
   'All': 'Все',
 
-
-
   /**
    * 5. Inbox
    */
@@ -441,7 +433,6 @@ export const phrases = {
   '{adderName} added you as a collaborator': '{adderName} добавил вас в участники',
   '{creatorName} added you as a collaborator': '{creatorName} добавил вас в участники',
 
-
   /**
    * 6. Задачи
    */
@@ -521,7 +512,6 @@ export const phrases = {
   'Yearly': 'Ежегодно',
   'Due Time': 'Время',
   'Start Date': 'Дата старта',
-
 
   'every {numberDropdown} week on{daysCheckbox}': 'каждую {numberDropdown} неделю в{daysCheckbox}',
   'every {numberDropdown} weeks on{daysCheckbox}': 'каждую {numberDropdown} нед. в{daysCheckbox}',
@@ -709,7 +699,6 @@ export const phrases = {
   'Unpin from Top': 'Открепить',
   'created this task': 'создал эту задачу',
 
-
   /**
    * 7.2. Меню
    */
@@ -766,7 +755,6 @@ export const phrases = {
   'Deactivation': 'Деактивация',
   'Remove access to all organizations and workspaces in Asana': 'Убрать доступ ко всем организациям и вокрспейсам Asana',
   'Deactivate account': 'Деактивировать аккаунт',
-
 
   /**
    * 8.1. Табы
@@ -839,7 +827,6 @@ export const phrases = {
   'Backgrounds': 'Фоновая картинка',
   'Save Changes': 'Сохранить изменения',
 
-
   /**
    * 9. Проекты
    */
@@ -890,9 +877,6 @@ export const phrases = {
   'Name or email': 'Имя или email',
   'New!': 'Новое!',
   'Add to project': 'Добавить в проект',
-
-
-
 
   /**
    * 9.1. Права
@@ -949,8 +933,6 @@ export const phrases = {
   'Notify them when new tasks are added to this project': 'Уведомлять этих людей о новых задачах добавленных в проект',
   'Send': 'Отправить',
 
-
-
   /**
    * 9.2. Доски
    */
@@ -989,7 +971,6 @@ export const phrases = {
   'Archive Project': 'Архивировать проект',
   'Unarchive Project': 'Разархивировать проект',
   'Delete Project': 'Удалить проект',
-
 
   /**
    * 10. Портфели
@@ -1093,7 +1074,6 @@ export const phrases = {
   'Only choose this option if you want to remove {name} from all projects in this team.': 'Это действие уберёт {name} из всех проектов в этой команде.',
   'Only choose this option if you want to remove {userName} from all projects in this team.': 'Это действие уберёт {userName} из всех проектов в этой команде.',
   'Only choose this option if you want to remove {userName} from all tasks.': 'Это действие уберёт {userName} из всех задач.',
-  'Only choose this option if you want to remove {userName} from all tasks.': 'Это действие уберёт {userName} из всех задач.',
   'If this person should lose all access to the {emailDomainList} Organization, <link>deprovision</link>.': 'Если необходимо полностью убрать человека из организации {emailDomainList}, нажмите <link>разжаловать</link>.',
   'If this person should lose all access to the {emailDomainList} Organization, ask an Organization Member to deprovision.': 'Если необходимо полностью убрать человека из организации {emailDomainList}, попросите о разжаловании пользователя организации',
   'If this person should lose all access to the {emailDomainList} Organization, contact your Administrator.': 'Если необходимо полностью убрать человека из организации {emailDomainList}, обратитесь к администратору.',
@@ -1120,8 +1100,6 @@ export const phrases = {
   'Add member': 'Добавить участника',
 
 
-
-
   /* TODO
   ++Сборные слова
   ++Приглашение в Асана
@@ -1132,10 +1110,7 @@ export const phrases = {
   ++Разделы в профиле (уведомления на почту)
   Надо сделать какую то рекламу
   Другой значёк
-  
+
   */
-
-
-
 
 }
