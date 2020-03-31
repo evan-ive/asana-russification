@@ -1,6 +1,6 @@
 import { codes } from './dictionaries/codes'
 import { phrases } from './dictionaries/phrases'
-import addHelper from './helper'
+import { addHelper } from './helper'
 
 export function init () {
   /**
@@ -9,28 +9,27 @@ export function init () {
    */
   sessionStorage['ap_localization'] = 1
 
-  let translated = rewriteDictionary()
+  const translated = rewriteDictionary()
   if (translated) return
 
-  let listener = () => {
-    if (rewriteDictionary()) {
-      document.removeEventListener('DOMNodeInserted', listener)
-    }
+  const listener = () => {
+    if (!rewriteDictionary()) return
+    document.removeEventListener('DOMNodeInserted', listener)
   }
 
   document.addEventListener('DOMNodeInserted', listener)
 }
 
 function rewriteDictionary () {
-  let dictionaries = window['_asana_voiceboxes']
+  // @ts-ignore
+  const dictionaries = window['_asana_voiceboxes']
   if (!dictionaries) return false
 
-  let { en: enDictionary } = dictionaries
+  const { en: enDictionary } = dictionaries
   if (!enDictionary) return false
 
   Object.keys(enDictionary).forEach(key => {
-    let item = enDictionary[key]
-
+    const item = enDictionary[key]
     if (codes[key]) return item[1] = codes[key]
 
     recursiveSearch(item, 1)
@@ -44,8 +43,8 @@ function rewriteDictionary () {
   return !!enDictionary
 }
 
-function recursiveSearch (item, key) {
-  let currentItem = item[key]
+function recursiveSearch (item: any, key: string | number) {
+  const currentItem = item[key]
 
   if (typeof currentItem === 'object') {
 

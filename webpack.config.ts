@@ -1,26 +1,25 @@
-const fs = require('fs')
-const path = require('path')
-const webpack = require('webpack')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+import * as fs from 'fs'
+import * as path from 'path'
+import * as webpack from 'webpack'
+import CopyWebpackPlugin from 'copy-webpack-plugin'
+import { TsconfigPathsPlugin } from 'tsconfig-paths-webpack-plugin'
+import { browsers, production } from './build/consts'
 
-require('@babel/register')
-
-const { production, browsers } = require('./build/consts')
 const context = path.resolve(__dirname, './src/browsers')
 
-const config = {
-  mode: process.env.NODE_ENV || 'development',
+export const config: webpack.Configuration = {
+  mode: production ? 'production' : 'development',
   context,
   entry () {
-    let entries = {}
+    const entries: Record<string, any> = {}
 
     browsers.forEach(browser => {
       let assetsPath = `${browser}/assets/js`
       let files = fs.readdirSync(`${context}/${assetsPath}`)
 
       files.forEach(file => {
-        file = `${assetsPath}/${file}`
-        entries[file] = `${context}/${file}`
+        const name = file.replace('.ts', '')
+        entries[`${assetsPath}/${name}.js`] = `${context}/${assetsPath}/${name}`
       })
     })
 
@@ -34,8 +33,8 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        loader: 'babel-loader',
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
         exclude: /node_modules/,
       },
     ],
@@ -46,10 +45,8 @@ const config = {
         from: '**/*',
         to: './',
         ignore: [
-          {
-            dot: true,
-            glob: '**/private/**/*',
-          },
+          { glob: '**/*/*.ts', dot: true },
+          { glob: '**/private/**/*', dot: true }
         ],
       },
     ]),
@@ -58,10 +55,10 @@ const config = {
     })
   ],
   resolve: {
-    alias: {
-      common: path.resolve(__dirname, './src/common'),
-    },
-    extensions: ['*', '.js', '.json'],
+    extensions: ['.ts', '.tsx', '.js'],
+    plugins: [
+      new TsconfigPathsPlugin()
+    ]
   },
   devtool: production
     ? 'cheap-module-source-map'
@@ -84,5 +81,5 @@ const config = {
   watch: !production,
 }
 
-module.exports = config
+export default config
 

@@ -1,13 +1,13 @@
-export default (enDictionary) => {
-  window.translateHelper = function translateHelper (phrase, strict) {
-
-    let length = typeof strict === 'number' && strict
+export function addHelper (enDictionary: Record<string, any>) {
+  // @ts-ignore
+  window['translateHelper'] = (phrase: string, strict = false) => {
+    const length = typeof strict === 'number' && strict
 
     Object.keys(enDictionary).forEach(key => {
       recursiveSearch(enDictionary[key], key)
     })
 
-    function recursiveSearch (item, code) {
+    function recursiveSearch (item: any, code: string) {
       if (!item) return
 
       if (typeof item === 'object') {
@@ -18,13 +18,11 @@ export default (enDictionary) => {
 
       if (!item.match || !item.match(new RegExp(phrase, 'igm'))) return
 
-      let check = strict
+      const check = strict
         ? length && item.length === length || item === phrase
         : true
 
-      if (check) {
-        console.log(code, item)
-      }
+      if (check) console.log(code, item)
     }
   }
 }

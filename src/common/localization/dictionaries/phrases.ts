@@ -1,4 +1,4 @@
-export const phrases = {
+export const phrases: Record<string, string> = {
 
   /**
    * 0. Общие и прочее
@@ -559,7 +559,6 @@ export const phrases = {
   'Join Task': 'Присоединиться к задаче',
   'Leave Task': 'Покинуть задачу',
 
-
   'Stop getting notifications about activity on this task.': 'Прекратить получать уведомления об этой задаче.',
   'Get notifications about activity on this task.': 'Начать получать уведомления об этой задаче.',
 
@@ -1020,7 +1019,6 @@ export const phrases = {
   'New Status Update': 'Новый статус проекта',
   'What\'s been done? What\'s next? What\'s blocked?': 'Что было сделано? На чём сфокусируемся в дальнейшем? Что мешает проекту?',
 
-
   'Copy Portfolio Link': 'Ссылка на портфель',
   'Copy portfolio link': 'Ссылка на портфель',
   'Rename…': 'Переименовать…',
@@ -1098,7 +1096,6 @@ export const phrases = {
   'Add people or teams': 'Добавить людей или команды',
   'Create new team in {companyName}': 'Создать новую команду в {companyName}',
   'Add member': 'Добавить участника',
-
 
   /* TODO
   ++Сборные слова
